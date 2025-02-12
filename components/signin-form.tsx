@@ -8,12 +8,9 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 
 export default function SignIn() {
   return (
@@ -27,16 +24,6 @@ export default function SignIn() {
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
-        {/* <div className="space-y-2">
-          <Label htmlFor="email">Email</Label>
-          <Input id="email" type="email" placeholder="m@example.com" />
-        </div>
-        <div className="space-y-2">
-          <Label htmlFor="password">Password</Label>
-          <Input id="password" type="password" />
-        </div>
-        <Button className="w-full">Sign in with Email</Button> */}
-
         <div className="relative">
           <div className="absolute inset-0 flex items-center">
             <span className="w-full border-t" />
@@ -62,17 +49,6 @@ export default function SignIn() {
           Sign in with Google
         </Button>
       </CardContent>
-      {/* <CardFooter className="flex flex-wrap items-center justify-between gap-2">
-        <div className="text-sm text-muted-foreground">
-          <span className="mr-1">Don&apos;t have an account?</span>
-          <Button variant="link" className="p-0 text-primary">
-            Sign up
-          </Button>
-        </div>
-        <Button variant="link" className="text-sm text-muted-foreground p-0">
-          Forgot password?
-        </Button>
-      </CardFooter> */}
     </Card>
   );
 }
