@@ -22,7 +22,7 @@ export default function Home() {
   if (isPending) {
     return (
       <div className="flex justify-center items-center min-h-screen">
-        <Loader2 className="animate-spin" />;
+        <Loader2 className="animate-spin" />
       </div>
     );
   }
